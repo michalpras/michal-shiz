@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michal Pras Site</title>
+            <script type=”text/javascript” src="mainJS.JS" ></script>
+            <link rel="stylesheet" href="main.css">
+    </head>
+    <body class="body">
+        
+        <div class="navBar">
+            <a class="home" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#employment">EMPLOYMENT</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+          <br>
+          <div class="intro">
+            <p id="demo" ></p>
+            
+          </div>
+          <div class="button-container">
+          <button  class ="btn" onclick="document.getElementById('myImage').src='Michal2.jpg'; typeWriter()">CLICK ME</button>
+          <button class="btn" onclick="document.getElementById('myImage').src='michal1.jpg'">LET'S GO BACK</button>
+          </div>
+          <script>
+            var i = 0;
+            var txt = "Hi, I'm Michal and WELCOME to my website!";
+            var speed = 80;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            </script>
+          <br>
+          <img class="myImage" id="myImage" src="michal1.jpg" >
+         <div>
+            
+              <h2 class="headline" ><a name="about">ABOUT</a></h2>
+              <div  class="line" ></div>
+
+              <p class="headline">
+                Hey there! 
+                <br>
+                I’m Michal Pras, a 26 year old student from Tel Aviv, Israel.
+                <br>
+                 I am studying computer science and entrepreneurship at Reichman University in Herzliya city.
+                 <br>
+                  In between the hard studies and exams,
+                  <br>
+                  I also work as a model and a social media influencer on Instagram - where life seems a bit different than it actually is! 
+
+              </p>
+              <br>
+            
+
+              <h2 class="headline" ><a name="education">EDUCATION</a></h2>
+              <div  class="line" ></div>
+              <div  class="headline">
+              <ul class="center-ul">
+               <li> 2009 Graduated Ramat Efal Elementary School. </li> 
+               <li> 2013 Graduated “Blich” high school - Chemistry matriculation. </li>
+                <li> Bootcamp commander course at IDF.</li>
+             </div>
+              <br>
+              <h2 class="headline" ><a name="employment">EMPLOYMENT</a></h2>
+              <div  class="line" ></div>
+              <ul class="center-ul" >
+                <li>2013 Bootcamp class commander in IDF.</li>
+                <li> 2014-2015 "El-Op” commander head office role.</li>
+                <li> 2016-Present Modeling and growing personal social media community.</li>
+                <li> 2020-Present Computer science and entrepreneurship undergraduate student, Reichman University.</li> 
+              </ul>
+              <br>
+              <h2 class="headline" ><a name="hobbies">HOBBIES</a></h2>
+              <div  class="line" ></div>
+              <br>
+              <div class="sameline">
+                <div class="image-container">
+                  <img src="travler.jpg" alt="image" class="img">
+                  <div class="overlay">
+                    <div class="text">WORLD TRAVLER</div>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="tennies.jpg" alt="image" class="img">
+                  <div class="overlay">
+                    <div class="text">TENNIS LOVER</div>
+                  </div>
+                </div>
+               </div>
+               <div class="sameline">
+                <div class="image-container">
+                  <img src="eat.jpg" alt="image" class="img">
+                  <div class="overlay">
+                    <div class="text">EAT LOVER</div>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="f1.jpg" alt="image" class="img">
+                  <div class="overlay">
+                    <div class="text">F1 FAN</div>
+                  </div>
+                </div>
+               </div>
+              
+              
+
+
+              <script>
+                function validateForm() {
+                  let x = document.forms["myForm"]["firstname"].value;
+                  
+                  if (x == "") {
+                    alert("First name must be filled out");
+                    return false;
+                  }else{
+                    let subject = document.forms["myForm"]["textme"].value;
+                    alert("Gooooood Job! Can't wait to read it!");
+                  window.location.href = "mailto:parsit1705@gmail.com?Subject=SHELI&body=" + subject;
+                    return true;
+                }
+                }
+                </script>
+                <h2 class="headline" ><a name="contact"></a>CONTCAT ME</h2>
+                <div  class="line" ></div>
+                
+                <div class="container">
+                  <form name="myForm" action="michalpras.html" onSubmit="return validateForm()">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="Email" name="email" placeholder="Your Email..">
+                    <label for="tsubjct">WRITE ME </label>
+                    <textarea id="subject" name="textme" placeholder="Write something.." ></textarea>
+                
+                    <input type="submit"  value="Submit">
+                  </form>
+                </div>
+          </div>
+    </body>
+</html>
