@@ -1,0 +1,169 @@
+
+
+.navBar {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+  }
+
+  *{
+    font-family: monospace, Arial, Helvetica, sans-serif;
+  }
+  
+  .navBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+
+  .navBar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .intro {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+  }
+  
+  .p{
+    
+    font-size: 17px;
+
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    background-color: #87ace4;; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 60px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 12px;
+  }
+  .center-ul{
+    text-align: center;
+    list-style-position: inside;
+  }
+  
+  .myImage {
+      width: 500px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+  }
+  .body{
+      background-color: rgb(223, 222, 222);
+  }
+  .headline{
+    text-align: center;
+    align-items: center;
+  }
+  .headline li{
+    text-align: center;
+    align-items: center;
+  }
+  .line{
+    height:2px;width:100%;background-color:currentColor
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #87ace4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #87ace4;;
+}
+
+.container {
+  border-radius: 5px;
+ 
+  padding: 20px;
+}
+.container, textarea{
+  height:200px;
+ 
+}
+.sameline{
+  	display:flex;
+    justify-content:center;
+    
+}
+.image-container {
+  position: relative;
+  width: 300px;
+}
+
+.img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  
+  
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width:  300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(172, 170, 170);
+ 
+}
+
+.image-container:hover .overlay {
+  opacity:0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
